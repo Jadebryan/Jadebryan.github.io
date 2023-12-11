@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the website -->
     <title>Bryan Jade - Personal Website</title>
+    
+    <!-- Linking external stylesheets and fonts -->
     <link rel="stylesheet" href="copy1.css">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">        
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Main container for the website -->
     <div class="container">
+        <!-- Navigation bar section -->
         <div class="navbar">
+            <!-- Website name with an icon -->
             <h4>BRYAN <i class='bx bxs-cat'></i></h4>
+            
+            <!-- Navigation links -->
             <nav>
                 <ul>
+                    <!-- Each link with an associated icon and index variable for animation -->
                     <li><a href="index.html" style="--i:1;" class="active"><i class='bx bxs-home'></i>Homepage</a></li>
                     <li><a href="blog.html" style="--i:2;"><i class='bx bxl-blogger'></i>it111blog</a></li>
                     <li><a href="flexpage.html" style="--i:3;"><i class='bx bxs-collection'></i>flexpage</a></li>
                 </ul>
             </nav>
+            
+        <!-- Video container section -->
         </div>
          <div class="video-container">
+             <!-- Instruction for the user -->
             <p> Tap the play button to play the video.</p>
+             
+             <!-- Video player with controls, autoplay, and loop -->
             <video controls autoplay loop >
+             <!-- Source of the video file (replace 'vid.mp4' with the correct path) -->
             <source src="vid.mp4" type="video/mp4">
-    </video>
-</div>
-
+            </video>
+        </div>
     </div>
+    
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2023 Bryan Jade. All rights reserved.</p>
+    <!-- Copyright information -->
+    <p>&copy; 2023 Bryan Jade. All rights reserved.</p>
     </footer>
 </body>
 </html>

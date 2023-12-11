@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Styling the container */
 .container {
     width: 100%;
     height: 100vh;
@@ -15,30 +16,39 @@
     box-sizing: border-box;
 }
 
+/* Styling the navbar */
 .navbar {
     height: 12%;
     display: flex;
     align-items: center;
-
 }
+
+/* Styling the navigation menu */
 nav {
     flex: 1;
     text-align: right;
 }
+
+/* Styling navigation menu items */
 .ul i{
     text-align: center;
 }
+
 nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 60px;
     position: relative;
 }
+
+/* Styling active and hover states of navigation menu items */
 nav ul li .active, nav ul li :hover{
     background: linear-gradient(#7649D9, #94FFF5, #58CDBD, #37B1A2, #009688);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+/* Styling navigation menu item links */
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -50,6 +60,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Styling the underline effect on navigation menu items */
 .navbar ul li::after 
     content: '';
     height: 3px;
@@ -61,9 +72,12 @@ nav ul li a {
     transition: 0.5s;
 }
 
+/* Increasing the underline width on hover */
 .navbar ul li:hover::after {
     width: 100%;
 }
+
+/* Styling heading tags */
 h3{
     font-size: 40px;
     color: #fff;
@@ -73,6 +87,7 @@ h3{
     opacity: 0;
     animation: slideTop .5s ease forwards;
 }
+
 h4 {
     font-size: 40px;
     color: #009688;
@@ -83,18 +98,22 @@ h4 {
     opacity: 0;
     animation: slideTop .5s ease forwards;
 }
+
+/* Styling home section */
 .home{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60 10% 0;
 }
+
+/* Styling home content */
 .home-content{
     max-width: 500px;
-    margin-left: -30px;
-    
-    
+    margin-left: -30px;   
 }
+
+/* Styling home content headings and paragraphs with animations */
 .home-content h1{
     margin-top: 60px;
     font-size: 56px;
@@ -107,6 +126,7 @@ h4 {
     color: transparent;
     opacity: 0;
 }
+
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
@@ -115,6 +135,7 @@ h4 {
     color: #fff;
     opacity: 0;
 }
+
 .home-content p{
     font-size: 16px;
     margin: 20px 0 5px;
@@ -123,9 +144,10 @@ h4 {
     color: #fff;
     opacity: 0;
     visibility: hidden;
-    text-align: justify;
-    
+    text-align: justify; 
 }
+
+/* Styling the button */
 .btn{
     position: relative;
     margin-left: 130px;
@@ -145,6 +167,8 @@ h4 {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1.8s;
 }
+
+/* Styling button hover effects */
 .btn::before{
     content: '';
     position: absolute;
@@ -160,10 +184,13 @@ h4 {
     filter: blur(5px);
     transition: .5 ease;
 }
+
+/* Styling button hover effects - before */
 .btn:hover::before{
-    background-position: 100% 0;
-    
+    background-position: 100% 0;  
 }
+
+/* Styling button hover effects - after */
 .btn::after{
     content: '';
     position: absolute;
@@ -177,12 +204,13 @@ h4 {
     border-radius: 40px;
     background-size: 200%;
     transition: .5 ease;
-    
 }
+
 .btn:hover::after{
-    background-position: 100% 0;
-    
+    background-position: 100% 0;   
 }
+
+/* Styling social icons in the home section */
 .home-sci a{
     position: relative;
     display: flex;
@@ -198,21 +226,27 @@ h4 {
     margin: 20px 0;
     z-index: 1;
 }
+
+/* Styling social icon animations */
 .home-sci a:nth-child(1){
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: 2.1s;   
 }
+
 .home-sci a:nth-child(2){
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 2.1s;   
 }
+
 .home-sci a:nth-child(3){
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2.1s;   
 }
+
+/* Styling social icon hover effects */
 .home-sci a::before{
     content: '';
     position: absolute;
@@ -224,11 +258,13 @@ h4 {
     z-index: -1;   
     transition: .5 ease;
 }
+
+/* Styling social icon hover effects - before */
 .home-sci a:hover::before{
     filter: blur(5px);
-    
-    
 }
+
+/* Styling social icon hover effects - after */
 .home-sci a::after{
     content: '';
     position: absolute;
@@ -240,9 +276,12 @@ h4 {
     z-index: -1;   
     transition: .5 ease;
 }
+
 .home-sci a:hover::after{
     transform: scale(0);
 }
+
+/* Styling home image */
 .home-img{
     width: 410px;
     height: 410px;
@@ -251,6 +290,8 @@ h4 {
     animation-delay: 2.1s, 3.1s;
     margin-bottom: 30px;
 }
+
+/* Styling glowing circle effect in the home image */
 .home-img .glowing-circle{
     position: relative;
     width: 100%;
@@ -261,6 +302,8 @@ h4 {
     align-items: center;
     margin-top: 60px;
 }
+
+/* Styling glowing circle background */
 .home-img .glowing-circle::after{
     content: '';
     position: absolute;
@@ -269,6 +312,8 @@ h4 {
     background: #0c1022;
     border-radius: 50%; 
 }
+
+/* Styling glowing circle span elements with gradient background */
 .glowing-circle span{
     position: absolute;
     width: 100%;
@@ -276,9 +321,13 @@ h4 {
     background: linear-gradient(#7649D9, #94FFF5, #58CDBD, #37B1A2, #009688);
     border-radius: 50%;
 }
+
+/* Applying blur to the first span in the glowing circle */
 .glowing-circle span:nth-child(1){
     filter: blur(10px);
 }
+
+/* Styling the image within the glowing circle */
 .glowing-circle .image{
     position: relative;
     width: 380px;
@@ -287,6 +336,8 @@ h4 {
     z-index: 1;
     overflow: hidden;
 }
+
+/* Styling the image within the glowing circle */
 .image img{
     position: absolute;
     top: 30px;
@@ -297,6 +348,7 @@ h4 {
     
 }
 
+/* Styling the footer */
 footer{
 position: fixed;
     bottom: 0;
@@ -309,6 +361,7 @@ position: fixed;
      animation: fadeInUp 0.5s ease-in-out;
 }
 
+/* Animation keyframes for sliding and fading effects */
 @keyframes slideTop{
     0%{
         opacity: 0;
